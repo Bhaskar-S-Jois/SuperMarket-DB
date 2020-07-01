@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Insert Data</title>
+</head>
+<body>
+	<form action="dbhome.html" method="POST">
+	<div align="right">
+		<?php
+			echo "Signed in : ". $user;
+		?>
+		<br>
+		<input type="submit" value="Logout"></input>
+	</div>
+	</form>
+	
+	<form action="insert.php" method="POST">
+		<input type='hidden' name='user' value='<?php echo "$user";?>'/> 
+		<input type='hidden' name='pass' value='<?php echo "$pass";?>'/> 
+		<input type="text" name="IID" placeholder="Item ID"></input>
+		<input type="text" name="Iname" placeholder="Item Name"></input>
+		<input type="number" name="Price" step="0.01" placeholder="Price per Item"></input>
+		<input type="number" name="Quantity" step="1" placeholder="Quantity"></input>
+		<input type="submit" value="submit">
+	</form>
+</body>
+</html>

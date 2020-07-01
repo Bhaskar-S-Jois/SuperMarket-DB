@@ -1,0 +1,96 @@
+<html>
+<head>
+	<title>supermarket</title>
+	<script type="text/javascript"> 
+		function func()
+		{
+			var x = document.getElementById("passid");
+			if(x.type === "password")
+				x.type = "text";
+			else
+				x.type = "password";
+		}
+		
+	</script>
+	<style type="text/css">
+		.container
+		{
+			height: 250px;
+			width:  250px;
+			background-color: #ffeeff;
+  			margin: 0;
+  			position: absolute;
+  			border-radius: 25px;
+  			top: 60%;
+  			left: 45%;
+  			-ms-transform: translateY(-50%);
+  			transform: translateY(-50%);
+  			 opacity: 0.4;
+  			transition: 0.5s;
+         
+		}
+		.container:hover 
+		{
+			opacity: 1;
+			height: 350px;
+			width : 350px;
+		}
+
+		.button
+		{
+  			 opacity: 0.4;
+  			transition: 0.5s;
+         
+		}
+		.button:hover {opacity: 1}
+	</style>
+	<h1 align="center">This is a supermarket database</h1>
+</head>
+<body>
+	<style>
+	body 
+	{
+		background-image: url("supermarket.jpg");
+  		
+  	}
+	</style>
+	<div class="button">
+		<form action="login_signup.php">
+		<div align="right">
+		<input type="submit" value="Sign Up"></input>
+		</div>
+		</form>
+		<form action="admin.html">
+		<div align="right">
+		<input type="submit" value="Structure Database"></input>
+		</div>
+		</form>
+		<form action="admin.html">
+		<div align="right">
+		<input type="submit" value="Repair Database"></input>
+		</div>
+		</form>
+	</div>
+
+	<!-- <a href="login_signup.php" ><p style="text-align: right"> sign up</a> -->
+	<div class="container">
+  	<div class="d-flex flex-row bg-secondary">
+    <div class="col-sm-4">
+	
+	
+	<form action="login.php" method="POST">
+		<div align="center">
+
+			<p align="center" style="font-size: 25px"><b>Sign in</b></p>
+			<input type="text" name="user" placeholder="user"></input><br>
+			<input id="passid" type="password" name="pass" placeholder="password"></input><br>
+			<input type="checkbox" onclick="func()"><b style="font-size: 25px">Show password</b></input><br>
+			<input type="submit" value="Submit"></input>
+		</div>
+	</form>
+	</div>
+	</div>
+	</div>
+
+</body>
+</html>

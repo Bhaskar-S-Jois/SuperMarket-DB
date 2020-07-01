@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Repair</title>
+	<link rel="stylesheet" type="text/css" href="logout.css">
+	<style>
+	body  
+	{
+		background-image: url("/supermarket.jpg");
+  		
+  	}
+	</style>
+	<style type="text/css">
+		.container
+		{
+			height: 250px;
+			width:  250px;
+			background-color: #ffeeff;
+  			margin: 0;
+  			position: absolute;
+  			border-radius: 25px;
+  			top: 60%;
+  			left: 45%;
+  			-ms-transform: translateY(-50%);
+  			transform: translateY(-50%);
+  			 opacity: 0.4;
+  			transition: 0.5s;
+         
+		}
+		.container:hover 
+		{
+			opacity: 1;
+			height: 350px;
+			width : 350px;
+		}
+
+		.button
+		{
+  			 opacity: 0.4;
+  			transition: 0.5s;
+         
+		}
+		.button:hover {opacity: 1}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="d-flex flex-row bg-secondary">
+   			 <div class="col-sm-4">
+
+				<form action="master_recovery.php" method="POST">
+					<div align="center">
+					<p align="center" style="font-size: 25px"><b>Structure/Recover Database</b></p>
+					<input type="text" name="admin" placeholder="Master User Name"><br>
+					<input type="password" name="password" placeholder="Master User Password"><br>
+					<input type="submit" value="Recover">
+					</div>
+				</form>
+				<form action="dbhome.html" method="POST">
+					<div align="center">
+					<input type="submit" value="Back">
+					</div>
+				</form>
+				<div align="center">
+				<p>Refer Product Manual for Master user and password</p>
+			</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+.log
+{
+			
+  	 opacity: 0.4;
+  	transition: 0.5s;
+         
+}
+.log:hover 
+{
+	opacity: 1;
+}
+.btn
+{
+	opacity: 0.7;
+	transition: 0.3s;
+}
+.btn:hover
+{
+	opacity: 1;
+}
+body
+{
+	background-color:#00ffff;
+}
